@@ -1,0 +1,34 @@
+		Estruturas padrao das tags
+
+		<nomeTag atributo="valor">	OBS:tags podem ou n ter
+		conteudo da tag		um fechamento
+		</nomeTag>
+		
+		EX
+		<p id="texto">
+		Olá mundo
+		</p>
+		
+	TAGS
+	
+a	links externos e internos
+img	imagem
+em	deixar em italico
+meta	conjunto de caracteres
+ol 	lista ordenada
+ul	lista n ordenada
+li	repesenta um item da lista
+h1,h2.	para titulos
+strong	deixar em negrito
+p	paragrafo
+title	tituto da pagina
+br	quebrar linha
+body	corpo  -> TODAS AS TAGS VISIVEIS DA NOSSA PAGINA
+head	cabeça -> NAO TERA AS INFORMAÇOES VISIVEIS, TERA AS CONFIGURAÇOES
+
+	ATRIBUTO
+	
+src	caminho para imagens
+width	tamanho da largura de uma tag
+alt	descriçao de imagens
+hred	links
