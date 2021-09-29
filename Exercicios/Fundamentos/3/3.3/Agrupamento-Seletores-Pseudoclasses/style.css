@@ -1,0 +1,29 @@
+h1, p {
+    text-align: center;
+
+}
+
+ul {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    text-align: left;
+}
+li:hover {
+    background-color: gainsboro;
+    font-size: 120%;
+    height: 50px;
+    transition: all 300ms;
+}
+li:active {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
