@@ -1,0 +1,31 @@
+		anotaçoes resumo
+		
+display	como o conteudo deve se comportar
+overflow	opçoes pra quando o conteudo esta maior q a caixa
+width		largura do conteudo, desconsiderando; bordas, margen e padding
+height		altura do conteudo, desconsiderando; bordas, margen e padding
+padding	controla quantidade de espaço vazio entre o conteudo e a borda
+border		borda da caixa
+margin		area ao redor da caixa, para dar afastamento entre elas
+absolute	permite posicionar qualquer elemente de acordo com o elemento pai que tenha uma posiçao diferente
+z-index	diz qual camada a nossa caixa ficara
+float		que lhe possibilita empurrar um elemento para a esquerda ou para a direita da página, permitindo que outras estruturas possam se organizar em torno dele.
+
+
+
+		anotaços detalhadas
+		
+	padding
+Pode ser traduzido como "enchimento" e controla a quantidade de espaço vazio entre o conteúdo em si e a borda da caixa.
+Ele pode ser pensado como se fosse o "plástico bolha" ao redor do conteúdo, e o seu uso, por padrão, aumenta o tamanho total do elemento, enchendo a caixa e fazendo com que ela precise ser maior que as dimensões do conteúdo.
+Tenha isso em mente quando for balancear a altura e a largura, afinal, uma caixa precisa ser maior que as dimensões do conteúdo quando ele está coberto com plástico bolha, não é mesmo?
+
+	border
+É a borda da caixa, pura e simples. A propriedade border em si é considerada uma shorthand , ou seja, ela serve como um atalho para controlar um conjunto de outras propriedades que poderiam ser definidas individualmente, nesse caso border-width , border-style , e border-color !
+border-width : também pode controlar a largura da borda e o seu valor inicial é medium .
+border-style : essa propriedade controla o estilo da linha e tem como valor inicial none . Por isso que você não consegue ver nenhuma borda se não alterar essa propriedade !
+border-color : essa propriedade controla a cor da borda, e tem como valor inicial currentcolor . Esse valor define a cor da borda como sendo o mesmo do elemento, então na maioria dos casos é desejável modificá-la.
+
+	margin
+A margem funciona como um tipo de "campo de força" que expande o elemento para além das suas dimensões visíveis. Ela fica do lado de fora da borda e não é afetada pela estilização do elemento, servindo mais para manejar o afastamento entre as caixas. Ainda assim, não esqueça que a margem faz parte da caixa dentro do box model !
+
