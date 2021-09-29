@@ -12,7 +12,6 @@
     z-index: 3;
     top: 420px;
     left: 300px;
-    background-image: none;
   }
   
   .baloon {
@@ -29,6 +28,7 @@
     font-size: 22px;
     top: 130px;
     right: 418px;
+
   }
   
   .bowser {
@@ -37,6 +37,7 @@
     width: 400px;
     top: 210px;
     left: 900px;
+
   }
 
   #chao{
