@@ -2,8 +2,11 @@ h1, p {
     text-align: center;
 
 }
+p{
+    font-size: 20px;
+}
 
-ul {
+ol, #motivos{
     width: 300px;
     display: block;
     margin-left: auto;
@@ -13,17 +16,22 @@ ul {
 li{
     text-align: left;
 }
-li:hover {
+ol li:hover {
     background-color: gainsboro;
+    width: 150px;
     font-size: 120%;
-    height: 50px;
+    height: auto;
     transition: all 300ms;
 }
-li:active {
+ol li:active {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+ol, ul {
+    list-style: none;
 }
