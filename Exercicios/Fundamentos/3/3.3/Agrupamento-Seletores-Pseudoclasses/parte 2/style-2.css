@@ -1,0 +1,48 @@
+body {
+    width: auto;
+    height: 500px;
+}
+
+h3 {
+    margin: 2px 0;
+}
+
+div:hover {
+    border: 2px solid black;
+}
+
+div:nth-child(1) {
+    color: red;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 20px;
+}
+div:nth-child(2) {
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+div:nth-child(3n) {
+    color: rgb(255, 208, 0);
+    font-size: 40px;
+}
+div:nth-child(4) {
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:inherit;
+    font-size: 20px;
+}
+div:nth-child(5) {
+    color: rgb(255, 0, 98);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+div:nth-child(odd){
+    font-style: italic;
+}
+
+
