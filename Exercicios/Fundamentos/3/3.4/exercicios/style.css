@@ -1,11 +1,29 @@
+*{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+html {
+    background-image: #c5c1c0;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+nav ul {
+    text-align: right;
+    color: black;
+
+}
 nav ul li{
     display: inline-block;
     margin-right: 30px;
-}
+    
 
+}
+.nav ul li a {
+    color: #0a1612;
+}
 a {
     text-decoration: none;
-    color: black;
     transition: all 100ms;
 }
 a:hover {
@@ -21,8 +39,65 @@ nav {
     display: inline-block;
     margin: 0;
     padding-inline-start: 18px;
+    text-align: left;
 }
 
  span {
      font-style: italic;
  }
+ article ul li {
+     text-align: left;
+ }
+
+ article {
+     width: 700px;
+     position: relative;
+     margin-left: 100px;
+     padding: 10px;
+     box-shadow: 0px 8px 8px black;
+     background-color: #1a2930;
+     border-radius: 5px;
+ }
+
+ 
+
+ p {
+    width: 700px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    
+ }
+ h3{
+     font-size: 30px;
+     color: white;
+     font-weight: 900;
+ }
+ h1 {
+     font-size: 50px;
+     margin-bottom: 150px;
+     color: #0a1612;
+ }
+ h2 {
+    font-size: 40px;
+    color: white;
+
+ }
+
+ .soco {
+     display: inline-block;
+ }
+ .soco img {
+     display: inline-block;
+     width: 340px;
+     margin-left: none;
+ }
+
+ img {
+     border-radius: 5px;
+ }
+
+ footer {
+     color: #0a1612;
+ }
+
