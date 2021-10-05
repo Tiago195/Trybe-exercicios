@@ -4,9 +4,7 @@
     color: white;
 }
 html {
-    background-image: #c5c1c0;
-    background-size: 200%;
-    background-repeat: no-repeat;
+    background-color: #c5c1c0;
 }
 nav ul {
     text-align: right;
@@ -22,11 +20,11 @@ nav ul li{
 .nav ul li a {
     color: #0a1612;
 }
-a {
+nav a {
     text-decoration: none;
     transition: all 100ms;
 }
-a:hover {
+nav a:hover {
     font-size: 110%;
 }
 
@@ -50,7 +48,12 @@ nav {
  }
 
  article {
-     width: 700px;
+     display: inline-flex;
+     align-items: flex-start;
+ }
+
+ main {
+    width: 700px;
      position: relative;
      margin-left: 100px;
      padding: 10px;
@@ -59,7 +62,20 @@ nav {
      border-radius: 5px;
  }
 
- 
+ .b123{
+     display: inline-block;
+ }
+ .pequenos-fatos{
+    width: 356;;
+    margin-left: 75px;
+    padding: 10px;
+    box-shadow: 0px 8px 8px black;
+    background-color: #1a2930;
+    border-radius: 5px;
+ }
+ .pequenos-fatos ul li {
+     margin-bottom: 10px;
+ }
 
  p {
     width: 700px;
@@ -98,6 +114,11 @@ nav {
  }
 
  footer {
-     color: #0a1612;
+     background-color: #1a2930;
+     color: white;
+     margin-top: 25px;
+     padding: 10px;
+     text-align: left;
  }
+
 
