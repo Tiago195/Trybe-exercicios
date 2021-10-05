@@ -1,0 +1,136 @@
+*{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin: 0;
+}
+html {
+    background-color: #c5c1c0;
+}
+nav ul {
+    text-align: right;
+    color: black;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    
+
+}
+.nav ul li a {
+    color: #0a1612;
+}
+nav a {
+    text-decoration: none;
+    transition: all 100ms;
+}
+nav a:hover {
+    font-size: 110%;
+}
+
+nav {
+    height: 60px;
+}
+
+
+.pf ul {
+    display: inline-block;
+    margin: 0;
+    padding-inline-start: 18px;
+    text-align: left;
+}
+
+ span {
+     font-style: italic;
+ }
+ article ul li {
+     text-align: left;
+ }
+
+ article {
+     display: inline-flex;
+     align-items: flex-start;
+ }
+
+ main {
+    width: 700px;
+     position: relative;
+     margin-left: 100px;
+     padding: 10px;
+     box-shadow: 0px 8px 8px black;
+     background-color: #1a2930;
+     border-radius: 5px;
+ }
+
+ .b123{
+     display: inline-block;
+ }
+ .pequenos-fatos{
+    width: 356;;
+    margin-left: 75px;
+    padding: 10px;
+    box-shadow: 0px 8px 8px black;
+    background-color: #1a2930;
+    border-radius: 5px;
+    margin-right: 20px;
+ }
+ .pequenos-fatos ul li {
+     margin-bottom: 10px;
+ }
+
+ p {
+    width: 700px;
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    
+ }
+ h3{
+     font-size: 30px;
+     color: white;
+     font-weight: 900;
+     margin-bottom: 20px;
+     margin-top: 10px;
+ }
+ h1 {
+     font-size: 50px;
+     margin-bottom: 150px;
+     color: #0a1612;
+ }
+ h2 {
+    font-size: 40px;
+    color: white;
+
+ }
+
+ .soco {
+     display: inline-block;
+ }
+ .soco img {
+     display: inline-block;
+     width: 340px;
+     margin-left: none;
+ }
+
+ img {
+     border-radius: 10px;
+ }
+
+ footer {
+     background-color: #1a2930;
+     color: white;
+     margin-top: 25px;
+     padding: 10px;
+     text-align: left;
+ }
+
+ #teste {
+     float: right;
+     margin-top: 10px;
+     margin-left: 20px;
+     height: 320px;
+
+ }
+
+
