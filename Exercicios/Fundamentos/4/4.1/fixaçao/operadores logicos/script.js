@@ -14,4 +14,32 @@
 // }
 // console.log(message);
 
+// let weekDay = "segunda-feira";
 
+// if (
+//   weekDay == "segunda-feira" ||
+//   weekDay == "terça-feira" ||
+//   weekDay == "quarta-feira" ||
+//   weekDay == "quinta-feira" ||
+//   weekDay == "sexta-feira"
+// ) {
+//   console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+// } else {
+//   console.log("FINALMENTE, descanso merecido UwU");
+// }
+
+let estudante = "aprovada";
+
+switch (estudante) {
+  case "aprovada":
+    console.log("Parabens, vc foi aprovada");
+    break;
+  case "lista":
+    console.log("Voce esta na lista de espera");
+    break;
+  case "reprovada":
+    console.log("Voce foi reprovado, mas pode tentar dnv na proxima turma");
+    break;
+    default:
+      console.log("nao se aplica");
+}
