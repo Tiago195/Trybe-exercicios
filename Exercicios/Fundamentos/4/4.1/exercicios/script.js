@@ -11,9 +11,10 @@
 
 
 // 2- Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
-// const n1 = 41;
-// const n2 = 43;
-
+// const n1 = 43;
+// const n2 = 45;
+// let max = n1>n2 ? console.log(n1) : console.log(n2);
+//OU
 // if (n1 > n2){
 //     console.log(n1);
 // } else {
@@ -21,21 +22,44 @@
 // }
 
 
+
 // 3- Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
-// const numeros = [5, 2 ,4];
+// const numeros = [5, 10 ,11];
 // let maiorNumero = numeros[0];
-// for (var i =0; i<numeros.length;i++) {
+// for (let i= 0;i<=numeros.length;i++) {
 //     if(maiorNumero < numeros[i]) {
 //         maiorNumero = numeros[i];
 //     }
 // }
 // console.log(maiorNumero);
+// let = numeros[0];
+// // OU
 
+// for (let i of numeros) {
+//     if(maiorNumero < i) {
+//         maiorNumero = i;
+//     }
+// }
+// console.log(maiorNumero);
+// let = numeros[0];
+// // OU
+
+// for (let i in numeros) {
+//     if(maiorNumero < numeros[i]) {
+//         maiorNumero = numeros[i];
+//     }
+// }
+// let = numeros[0];
+// console.log(maiorNumero);
 // OU
 
-// const n1 = 1;
-// const n2 = 8;
-// const n3 = 6;
+// const n1 = 10;
+// const n2 = 10;
+// const n3 = 10;
+
+// let mac = n1>n2 && n1>n3 ? console.log(n1): n2>n3 ? console.log(n2) : console.log(n3);
+
+//OU
 
 // if(n1 > n2 && n1 > n3) {
 //     console.log(n1);
@@ -188,77 +212,77 @@
 // 11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
 // INSS
-const salarioBruto = 2500;
-let salarioLiquido; // variavel q vai ser o salario liquido
-const ali8 = (8/100)*salarioBruto; // INSS de 8%
-const ali9 = (9/100)*salarioBruto; // INSS de 9%
-const ali11 = (11/100)*salarioBruto; // INSS de 11%
-const aliMax = 570.88; // INSS max a ser descontado
-let calc; // variavel q vai fazer os calculos
+// const salarioBruto = 2500;
+// let salarioLiquido; // variavel q vai ser o salario liquido
+// const ali8 = (8/100)*salarioBruto; // INSS de 8%
+// const ali9 = (9/100)*salarioBruto; // INSS de 9%
+// const ali11 = (11/100)*salarioBruto; // INSS de 11%
+// const aliMax = 570.88; // INSS max a ser descontado
+// let calc; // variavel q vai fazer os calculos
 
-if (salarioBruto <= 0) { // Verificando se o salario é negativo
-  console.log("[ERRO] Valor bruto invalido")
-} else {    // se n for negativo, cai nessas verificaçoes
-  if (salarioBruto <= 1556.94) {                                  // Verificando qual o valor a pagar ao INSS
-    console.log(`Salario Bruto: R$${salarioBruto}`);
-    salarioLiquido = salarioBruto-ali8;
-    console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
+// if (salarioBruto <= 0) { // Verificando se o salario é negativo
+//   console.log("[ERRO] Valor bruto invalido")
+// } else {    // se n for negativo, cai nessas verificaçoes
+//   if (salarioBruto <= 1556.94) {                                  // Verificando qual o valor a pagar ao INSS
+//     console.log(`Salario Bruto: R$${salarioBruto}`);
+//     salarioLiquido = salarioBruto-ali8;
+//     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
   
-  }else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){  // Verificando qual o valor a pagar ao INSS
-    console.log(`Salario Bruto: R$${salarioBruto}`);
-    salarioLiquido = salarioBruto-ali9;
-    console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
+//   }else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){  // Verificando qual o valor a pagar ao INSS
+//     console.log(`Salario Bruto: R$${salarioBruto}`);
+//     salarioLiquido = salarioBruto-ali9;
+//     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
   
-  } else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){  // Verificando qual o valor a pagar ao INSS
-    console.log(`Salario Bruto: R$${salarioBruto}`);
-    salarioLiquido = salarioBruto-ali11;
-    console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
+//   } else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){  // Verificando qual o valor a pagar ao INSS
+//     console.log(`Salario Bruto: R$${salarioBruto}`);
+//     salarioLiquido = salarioBruto-ali11;
+//     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
 
-  }else {                                                          // se o salario for maior q 5189.82 ele vai cair aqui, q é o valor maximo
-    console.log(`Salario Bruto: R$${salarioBruto}`);
-    salarioLiquido = salarioBruto - aliMax;
-    console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
+//   }else {                                                          // se o salario for maior q 5189.82 ele vai cair aqui, q é o valor maximo
+//     console.log(`Salario Bruto: R$${salarioBruto}`);
+//     salarioLiquido = salarioBruto - aliMax;
+//     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
 
-  }
-}
+//   }
+// }
 
-//Imposto de Renda
-const ali7_5= (7.5/100)*salarioLiquido;  // Imposto de renda de 7,5%
-const ali15= (15/100)*salarioLiquido;    // Imposto de renda de 15%
-const ali22_5= (22.5/100)*salarioLiquido;// Imposto de renda de 22.5%
-const ali27_5= (27.5/100)*salarioLiquido;// Imposto de renda de 27,5%
+// //Imposto de Renda
+// const ali7_5= (7.5/100)*salarioLiquido;  // Imposto de renda de 7,5%
+// const ali15= (15/100)*salarioLiquido;    // Imposto de renda de 15%
+// const ali22_5= (22.5/100)*salarioLiquido;// Imposto de renda de 22.5%
+// const ali27_5= (27.5/100)*salarioLiquido;// Imposto de renda de 27,5%
 
-if (salarioLiquido <= 0 || salarioLiquido == undefined) {  // Verificando se o salario liquido nao é um valor negativo
-  console.log("[ERRO] Valor liquido invalido")
+// if (salarioLiquido <= 0 || salarioLiquido == undefined) {  // Verificando se o salario liquido nao é um valor negativo
+//   console.log("[ERRO] Valor liquido invalido")
 
-} else { // se o salario for positivo, ele cai nessas verificaçoes
-  if (salarioLiquido <= 1903.98) { // Verificando se salario liquido tem imposto de renda
-    console.log("Isento de imposto de renda");
-    console.log(`líquido a ser recebido: ${salarioLiquido.toFixed(2)}`);
+// } else { // se o salario for positivo, ele cai nessas verificaçoes
+//   if (salarioLiquido <= 1903.98) { // Verificando se salario liquido tem imposto de renda
+//     console.log("Isento de imposto de renda");
+//     console.log(`líquido a ser recebido: ${salarioLiquido.toFixed(2)}`);
 
-  } else if (salarioLiquido >= 1903.99 && salarioLiquido <= 2826.65){ // Verificando qual o imposto de renda
-    calc = ali7_5-142.80;
-    console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
-    salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
+//   } else if (salarioLiquido >= 1903.99 && salarioLiquido <= 2826.65){ // Verificando qual o imposto de renda
+//     calc = ali7_5-142.80;
+//     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
+//     salarioLiquido-=calc;
+//     console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
-  } else if (salarioLiquido >= 2826.66 && salarioLiquido <= 3751.05 ){ // Verificando qual o imposto de renda
-    calc = ali15-354.80;
-    console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
-    salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
+//   } else if (salarioLiquido >= 2826.66 && salarioLiquido <= 3751.05 ){ // Verificando qual o imposto de renda
+//     calc = ali15-354.80;
+//     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
+//     salarioLiquido-=calc;
+//     console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
-  } else if (salarioLiquido >= 3751.06 && salarioLiquido <= 4664.68) { // Verificando qual o imposto de renda
-    calc = ali22_5-636.13;
-    console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
-    salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
+//   } else if (salarioLiquido >= 3751.06 && salarioLiquido <= 4664.68) { // Verificando qual o imposto de renda
+//     calc = ali22_5-636.13;
+//     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
+//     salarioLiquido-=calc;
+//     console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
-  } else {                                                             // Se o Imposto de renda for maior q 4664.68, ele cai aqui
-    calc = ali27_5-869.36;
-    console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
-    salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
+//   } else {                                                             // Se o Imposto de renda for maior q 4664.68, ele cai aqui
+//     calc = ali27_5-869.36;
+//     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
+//     salarioLiquido-=calc;
+//     console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
-  }
-}
+//   }
+// }
