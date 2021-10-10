@@ -188,7 +188,7 @@
 // 11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
 // INSS
-const salarioBruto = 2000;
+const salarioBruto = 2500;
 let salarioLiquido; // variavel q vai ser o salario liquido
 const ali8 = (8/100)*salarioBruto; // INSS de 8%
 const ali9 = (9/100)*salarioBruto; // INSS de 9%
@@ -234,31 +234,31 @@ if (salarioLiquido <= 0 || salarioLiquido == undefined) {  // Verificando se o s
 } else { // se o salario for positivo, ele cai nessas verificaçoes
   if (salarioLiquido <= 1903.98) { // Verificando se salario liquido tem imposto de renda
     console.log("Isento de imposto de renda");
-    console.log(`líquido a ser recebido: ${salarioLiquido}`);
+    console.log(`líquido a ser recebido: ${salarioLiquido.toFixed(2)}`);
 
   } else if (salarioLiquido >= 1903.99 && salarioLiquido <= 2826.65){ // Verificando qual o imposto de renda
     calc = ali7_5-142.80;
     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
     salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido}`)
+    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
   } else if (salarioLiquido >= 2826.66 && salarioLiquido <= 3751.05 ){ // Verificando qual o imposto de renda
     calc = ali15-354.80;
     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
     salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido}`)
+    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
   } else if (salarioLiquido >= 3751.06 && salarioLiquido <= 4664.68) { // Verificando qual o imposto de renda
     calc = ali22_5-636.13;
     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
     salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido}`)
+    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
   } else {                                                             // Se o Imposto de renda for maior q 4664.68, ele cai aqui
     calc = ali27_5-869.36;
     console.log(`Imposto de renda a pagar: R$${calc.toFixed(2)}`)
     salarioLiquido-=calc;
-    console.log(`Liquido a ser recebido: R$${salarioLiquido}`)
+    console.log(`Liquido a ser recebido: R$${salarioLiquido.toFixed(2)}`)
 
   }
 }
