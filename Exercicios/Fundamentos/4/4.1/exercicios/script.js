@@ -188,7 +188,7 @@
 // 11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
 // INSS
-const salarioBruto = 3000;
+const salarioBruto = 2000;
 let salarioLiquido; // variavel q vai ser o salario liquido
 const ali8 = (8/100)*salarioBruto; // INSS de 8%
 const ali9 = (9/100)*salarioBruto; // INSS de 9%
@@ -196,24 +196,26 @@ const ali11 = (11/100)*salarioBruto; // INSS de 11%
 const aliMax = 570.88; // INSS max a ser descontado
 let calc; // variavel q vai fazer os calculos
 
-console.log(`Salario Bruto: R$${salarioBruto}`);
-
 if (salarioBruto <= 0) { // Verificando se o salario é negativo
   console.log("[ERRO] Valor bruto invalido")
 } else {    // se n for negativo, cai nessas verificaçoes
   if (salarioBruto <= 1556.94) {                                  // Verificando qual o valor a pagar ao INSS
+    console.log(`Salario Bruto: R$${salarioBruto}`);
     salarioLiquido = salarioBruto-ali8;
     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
   
   }else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92){  // Verificando qual o valor a pagar ao INSS
+    console.log(`Salario Bruto: R$${salarioBruto}`);
     salarioLiquido = salarioBruto-ali9;
     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
   
   } else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){  // Verificando qual o valor a pagar ao INSS
+    console.log(`Salario Bruto: R$${salarioBruto}`);
     salarioLiquido = salarioBruto-ali11;
     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
 
   }else {                                                          // se o salario for maior q 5189.82 ele vai cair aqui, q é o valor maximo
+    console.log(`Salario Bruto: R$${salarioBruto}`);
     salarioLiquido = salarioBruto - aliMax;
     console.log(`Salario Bruto - INSS = R$${salarioLiquido}`);
 
@@ -226,7 +228,7 @@ const ali15= (15/100)*salarioLiquido;    // Imposto de renda de 15%
 const ali22_5= (22.5/100)*salarioLiquido;// Imposto de renda de 22.5%
 const ali27_5= (27.5/100)*salarioLiquido;// Imposto de renda de 27,5%
 
-if (salarioLiquido <= 0) {  // Verificando se o salario liquido nao é um valor negativo
+if (salarioLiquido <= 0 || salarioLiquido == undefined) {  // Verificando se o salario liquido nao é um valor negativo
   console.log("[ERRO] Valor liquido invalido")
 
 } else { // se o salario for positivo, ele cai nessas verificaçoes
