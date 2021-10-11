@@ -24,7 +24,8 @@
 
 
 // 3- Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
-// const numeros = [5, 10 ,11];
+
+// const numeros = [13, 12 ,11];
 // let maiorNumero = numeros[0];
 // for (let i= 0;i<=numeros.length;i++) {
 //     if(maiorNumero < numeros[i]) {
@@ -33,6 +34,7 @@
 // }
 // console.log(maiorNumero);
 // let = numeros[0];
+
 // // OU
 
 // for (let i of numeros) {
@@ -42,6 +44,7 @@
 // }
 // console.log(maiorNumero);
 // let = numeros[0];
+
 // // OU
 
 // for (let i in numeros) {
@@ -51,13 +54,15 @@
 // }
 // let = numeros[0];
 // console.log(maiorNumero);
+
 // OU
 
-// const n1 = 10;
-// const n2 = 10;
-// const n3 = 10;
+// const n1 = 11;
+// const n2 = 12;
+// const n3 = 12;
 
 // let mac = n1>n2 && n1>n3 ? console.log(n1): n2>n3 ? console.log(n2) : console.log(n3);
+
 
 //OU
 
@@ -81,19 +86,37 @@
 
 // 5-Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
-// const n1 = 20;
-// const n2 = 30;
-// const n3 = 80;
+// const n1 = 60;
+// const n2 = 60;
+// const n3 = 60;
 // const triângulo = (n1 + n2 + n3) == 180;
+
+// let degreeAngleA = 65;
+// let degreeAngleB = 100;
+// let degreeAngleC = 15;
+
+// let sumOfAngles = degreeAngleA + degreeAngleB + degreeAngleC;
+
+// let allAnglesArePositives = degreeAngleA > 0 && degreeAngleB > 0 && degreeAngleC > 0;
+
+// if(allAnglesArePositives) {
+//   if (sumOfAngles === 180) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   };
+// } else {
+//   console.log('Erro: ângulo inválido');
+// }
 
 // console.log(triângulo);
 
 
 // 6-Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
-// let peça = "RAinhA"
-// const peça2 = peça.toLowerCase();
-// switch (peça2){
+// let peca = "RAinhA";
+//
+// switch (peca.toLowerCase()) {
 //     case "piao":
 //         console.log("vertical");
 //     break;
@@ -137,13 +160,13 @@
 
 // 8-Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
 
-// const n1 = 8901;
+// const n1 = 8902;
 // const n2 = 842;
-// const n3 = 48671;
+// const n3 = 48672;
 
 // if (n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0) {
-//   console.log("True");
-// } else (console.log("false"));
+//   console.log(true);
+// } else (console.log(false));
 
 // OU
 
@@ -209,11 +232,22 @@
 //   console.log(lucroLiquido);
 // }
 
+// OU
+
+// let custo = 20;
+// let venda = 40;
+// let unidade = 1000;
+// custo = venda-(custo+(custo*0.20));
+// if (custo <= 0 || venda <= 0){
+//     console.log("[ERRO] Números invalidos.")
+//   } else{
+//     console.log(custo*unidade);
+//   }
 
 // 11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
-// INSS
-// const salarioBruto = -1;
+// // INSS
+// const salarioBruto = 3000;
 // let salarioLiquido; // variavel q vai ser o salario liquido
 // const ali8 = (8/100)*salarioBruto; // INSS de 8%
 // const ali9 = (9/100)*salarioBruto; // INSS de 9%
@@ -287,3 +321,4 @@
 
 //   }
 // }
+
