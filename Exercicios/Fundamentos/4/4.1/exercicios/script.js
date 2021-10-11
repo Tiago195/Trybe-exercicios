@@ -81,7 +81,7 @@
 
 // 5-Faça um programa que defina três constantes com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false , caso contrário. Se algum ângulo for inválido o programa deve retornar uma mensagem de erro.
 
-// const n1 = 70;
+// const n1 = 20;
 // const n2 = 30;
 // const n3 = 80;
 // const triângulo = (n1 + n2 + n3) == 180;
@@ -91,8 +91,9 @@
 
 // 6-Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
-// let peça = "piao"
-// switch (peça){
+// let peça = "RAinhA"
+// const peça2 = peça.toLowerCase();
+// switch (peça2){
 //     case "piao":
 //         console.log("vertical");
 //     break;
@@ -212,7 +213,7 @@
 // 11-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 
 // INSS
-// const salarioBruto = 2500;
+// const salarioBruto = -1;
 // let salarioLiquido; // variavel q vai ser o salario liquido
 // const ali8 = (8/100)*salarioBruto; // INSS de 8%
 // const ali9 = (9/100)*salarioBruto; // INSS de 9%
