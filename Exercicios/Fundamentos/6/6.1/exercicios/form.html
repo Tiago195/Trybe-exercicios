@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Exercicio 6.1-Trybe</h1></header>
+  <form action="" method="get">
+  <fieldset class="fieldset">
+    <legend>Dados Pessoais</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" maxlength="40" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" maxlength="50" required>
+      <br>
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      <br>
+      <label for="endereco" id="sla">Endereço:</label>
+      <input type="text" name="endereco" id="endereco" maxlength="200" required></textarea>
+      <br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" name="cidade" id="cidade" maxlength="28" required>
+      <br>
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado" required>
+      </select>
+      <br>
+      <div id="bagunca">
+        <label for="casa">Casa:
+        <input type="radio" id="casa" name="tipo-de-moradia" required></label>
+        <label for="apartamento">Apartamento:
+        <input type="radio" id="apartamento" name="tipo-de-moradia"></label>
+      </div>
+    </fieldset>
+    <fieldset class="fieldset">
+      <legend>Ultimo Emprego</legend>
+      <label for="resumo-curriculo">Resumo-curriculo:</label>
+      <textarea name="Resumo-curriculo" id="resumo-curriculo" cols="100" rows="10" maxlength="1000" required></textarea>
+      <br>
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" name="cargo" maxlength="40" required>
+      <br>
+      <label for="descricao-cargo">Descrição do cargo:</label>
+      <input type="text" id="descricao-cargo" name="descricao-cargo" maxlength="500" required>
+      <br>
+      <label for="data-inicio">Data de inicio:</label>
+      <input type="text" id="data-inicio" maxlength="10" name="data-inicio" required placeholder="dd/mm/aaaa">
+    </fieldset>
+    <button type="submit" id="enviar">Enviar</button>
+  </form>
+    <section id="lugar">
+
+    </section>
+  <script src="script.js"></script>
+</body>
+</html>
