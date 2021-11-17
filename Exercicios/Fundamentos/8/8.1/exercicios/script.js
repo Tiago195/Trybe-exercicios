@@ -15,4 +15,9 @@ const newEmployees = () => {
   return employees;
 };
 
-console.log(newEmployees())
+// console.log(newEmployees())
+
+const numeroSorteado = () => Math.trunc(Math.random() * 5 + 1)
+const sorteio = (e, func) => e === func ? 'Parabéns você ganhou' : 'Tente novamente';
+
+console.log(sorteio(2, numeroSorteado()))
