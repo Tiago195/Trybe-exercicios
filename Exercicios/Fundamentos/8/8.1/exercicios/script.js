@@ -20,4 +20,21 @@ const newEmployees = () => {
 const numeroSorteado = () => Math.trunc(Math.random() * 5 + 1)
 const sorteio = (e, func) => e === func ? 'Parabéns você ganhou' : 'Tente novamente';
 
-console.log(sorteio(2, numeroSorteado()))
+// console.log(sorteio(2, numeroSorteado()))
+
+const tutu = (gabarito, resposta, func) => {
+  return func(gabarito, resposta)
+};
+const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const respostaAluno = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+console.log(tutu(gabarito, respostaAluno, (gab, e) => {
+  let pontos = 0
+  for (let i in gab) {
+    if (e[i] === 'N.A') {
+    } else {
+      gab[i] === e[i] ? pontos += 1 : pontos -= 0.5
+    }
+  }
+  return pontos
+}));
