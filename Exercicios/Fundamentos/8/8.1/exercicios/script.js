@@ -88,5 +88,35 @@ const mageDamage = () => {
   }
 
 };
+//------------------//
+//Bonus parte2
 
-console.log(mageDamage())
+const gameActions = {
+  // Crie as HOFs neste objeto.
+  wa(callback) {
+    warrior.damage = callback()
+    dragon.healthPoints -= warrior.damage
+    return warrior
+  },
+  me(callback) {
+    mage.damage = callback().dano
+    dragon.healthPoints -= mage.damage
+    return mage
+  },
+  dg(callback) {
+    dragon.damage = callback()
+    warrior.healthPoints -= dragon.damage
+    mage.healthPoints -= dragon.damage
+    return dragon
+  },
+  battleMembers() {
+    return {
+      warrior: this.wa(warriorDamage),
+      mage: this.me(mageDamage),
+      dragon: this.dg(dragonDamage),
+    }
+  }
+};
+
+
+console.log(gameActions.battleMembers())
