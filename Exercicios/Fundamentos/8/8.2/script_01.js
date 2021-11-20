@@ -98,10 +98,10 @@ function getNamedBook() {
     1921
     teste[e[0]] = e[1]
   }))
-  return teste
+  return tutu
 }
 
-// console.log(getNamedBook())
+console.log(getNamedBook())
 
 function booksOrderedByReleaseYearDesc() {
   // escreva aqui seu código

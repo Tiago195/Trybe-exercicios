@@ -93,8 +93,6 @@ function oldBooksOrdered() {
   }).sort((a, b) => a.releaseYear - b.releaseYear)
 }
 
-// console.log(oldBooksOrdered())
-
 function fantasyOrScienceFictionAuthors() {
   // escreva seu código aqui
   return books.filter(e => e.genre === 'Ficção Científica' || e.genre === 'Fantasia')
@@ -118,4 +116,4 @@ function authorWith3DotsOnName() {
   }).name
 }
 
-console.log(authorWith3DotsOnName())
+// console.log(authorWith3DotsOnName())
