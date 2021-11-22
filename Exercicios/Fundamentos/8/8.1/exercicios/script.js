@@ -17,10 +17,10 @@
 //------------------------------//
 
 // Exercicio 2
-// const numeroSorteado = () => Math.trunc(Math.random() * 5 + 1)
-// const sorteio = (e, func) => e === func ? 'Parabéns você ganhou' : 'Tente novamente';
+const numeroSorteado = () => Math.trunc(Math.random() * 5 + 1)
+const sorteio = (e, func) => e === func ? 'Parabéns você ganhou' : 'Tente novamente';
 
-// console.log(sorteio(2, numeroSorteado()))
+console.log(sorteio(2, numeroSorteado()))
 //--------------------//
 
 // Exercicio 3
@@ -119,4 +119,4 @@ const gameActions = {
 };
 
 
-console.log(gameActions.battleMembers())
+// console.log(gameActions.battleMembers())
