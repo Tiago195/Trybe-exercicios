@@ -1,14 +1,20 @@
 //1 - Dada uma matriz, transforme em um array.
-// const arrays = [
-//   ['1', '2', '3'],
-//   [true],
-//   [4, 5, 6],
-// ];
+const arrays = [
+  ['1', '2', '3'],
+  [true],
+  [4, 5, 6],
+];
 
-// function flatten() {
-//   // escreva seu código aqui
-//   return arrays.flat()
-// }
+function flatten() {
+  // escreva seu código aqui
+  // return arrays.flat()
+  // return arrays.reduce((a, b) => {
+  //   return a = [...a, ...b]
+  // }, [])
+  return arrays.reduce((a, b) => {
+    return a.concat(b)
+  })
+}
 // console.log(flatten())
 
 //Para os exercícios 2, 3 e 4 considere o seguinte array:
@@ -81,7 +87,7 @@ function reduceNames() {
   // escreva seu código aqui
   return books.reduce((a, b) => a + `${b.author.name}, `, '')
 }
-// console.log(reduceNames())
+console.log(reduceNames())
 
 //3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 function averageAge() {
@@ -108,13 +114,11 @@ const names = [
   'Abeladerco', 'Adieidy', 'Alarucha',
 ];
 
-function containsA() {
-  // escreva seu código aqui
-  return names.reduce((a, b) => {
-    return a + (b.replace(/[b-z]/gi, '').length)
-  }, 0)
-}
-
+// function containsA() {
+//   // escreva seu código aqui
+//   return names.reduce((a, b) => a + (b.replace(/[b-z]/gi, '').length), 0)
+// }
+const containsA = () => names.reduce((a, b) => a + (b.replace(/[b-z]/gi, '').length), 0)
 // console.log(containsA())
 
 // 6. - Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato { name: nome do aluno, average: media das notas } . Para isso vamos assumir que a posição 0 de notas refere-se ao aluno na posição 0 de alunos , aqui além de reduce será necessário utilizar também a função map . Dica: Você pode acessar o index do array dentro de map , e você pode ver o objeto esperado na constante expected .
