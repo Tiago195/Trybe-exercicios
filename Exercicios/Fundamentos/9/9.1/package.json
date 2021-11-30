@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jest": "^27.4.0"
+  },
+  "name": "9.1",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
