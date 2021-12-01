@@ -158,11 +158,11 @@
 
 //7 - Escreva um teste que verifique a chamada do callback de uma função uppercase , que transforma as letras de uma palavra em letras maiúsculas. Lembre-se de ter cuidado com os falso-positivos em testes assíncronos.
 
-// const uppercase = (str, callback) => {
-//   setTimeout(() => {
-//     callback(str.toUpperCase());
-//   }, 500);
-// };
+const uppercase = (str, callback) => {
+  setTimeout(() => {
+    callback(str.toUpperCase());
+  }, 500);
+};
 
 // console.log(uppercase('sadfljsadlasdas', (e) => console.log(e)))
 
@@ -197,15 +197,15 @@ function getPokemonDetails(filter, callback) {
 
     const messageFromProfOak = `Olá, seu pokémon é o ${name}, o tipo dele é ${type} e a habilidade principal dele é ${ability}`;
 
-    callback(null, messageFromProfOak);
+    callback(null, messageFromProfOak)
   }, 2000);
 }
 
-getPokemonDetails((e) => e.name === 'Charmander', (nulo, mensagem) => console.log(mensagem));
+getPokemonDetails((e) => e.name === 'Charmander', (nulo, mensagem) => nulo ? console.log(nulo) : console.log(mensagem))
 
 
 
 module.exports = {
   getPokemonDetails,
-  // uppercase
+  uppercase
 }
