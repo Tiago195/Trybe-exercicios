@@ -1,0 +1,14 @@
+.App {
+  border: 1px solid #444;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.pai-pokemon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
