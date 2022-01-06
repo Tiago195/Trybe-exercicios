@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.App > button{
+  /* background-color: green; */
+  border: none;
+  padding: 5px 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  font-size: 100px;
+}
+
+.App > div button {
+  margin: 5px;
+  width: 100px;
+  padding: 5px 20px;
+  border: none;
+}
+
+.App > div button:nth-child(1) {
+  background-color: green;
+}
+
+.App > div button:nth-child(2) {
+  background-color: red;
+}
+
+.App > div button:nth-child(3) {
+  background-color: yellow;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
