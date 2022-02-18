@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: url('./images/background.png');
+}
+
+header h1 {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.App {
+  text-align: center;
+}
+
+.missao-container {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.missao-container h2 {
+  padding: 15px;
+  width: 100vw;
+  text-align: center;
+  font-size: 35px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.missao-container section {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  position: relative;
+  min-width: 300px;
+  flex: 1;
+}
+
+.missao-container section h3 {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 18px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.missao-container section ul {
+  list-style-type: none;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.solarSystem-container {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.solarSystem-container h2 {
+  padding: 15px;
+  width: 100vw;
+  text-align: center;
+  font-size: 35px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.solarSystem-container section {
+  display: flex;
+  width: 100vw;
+  height: 150px;
+}
+
+.solarSystem-container section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.div-img {
+  justify-content: center;
+}
+
+.solarSystem-container section div:nth-child(1) div img {
+  width: 20%
+}
+
+.solarSystem-container section div:nth-child(2) div img {
+  width: 40%
+}
+
+.solarSystem-container section div:nth-child(3) div img {
+  width: 45%
+}
+
+.solarSystem-container section div:nth-child(4) div img {
+  width: 35%
+}
+
+.solarSystem-container section div:nth-child(5) div img {
+  width: 120%
+}
+
+.solarSystem-container section div:nth-child(6) div img {
+  transform: rotate(-10deg);
+  width: 110%
+}
+
+.solarSystem-container section div:nth-child(7) div img {
+  width: 70%
+}
+
+.solarSystem-container section div:nth-child(8) div img {
+  width: 70%
+}
+
+.planet {
+  width: auto;
+}
+
+.planet h3 {
+  text-align: center;
+}
+
+/* .solarSystem-container section div:nth-child(1) {
+  width: 10%;
+}
+
+.solarSystem-container section div:nth-child(2) {
+  width: 20%;
+} */
+
+/* .solarSystem-container section div img {
+  /* width: 100%; */
+  /* flex: 1; */
+/* } */ 
