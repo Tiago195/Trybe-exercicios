@@ -30,10 +30,10 @@ async function nextPage(page) {
       count++
     }else {
       await page.keyboard.type(arrayDeMensagem[count]);
-      await page.mouse.click(275.875, 393)
+      await (await page.waitForSelector('.hEnrLq')).click();
       clearInterval(idInterval);
     }
   }, 5000)
  
-  await browser.close();
+  // await browser.close();
 })();
