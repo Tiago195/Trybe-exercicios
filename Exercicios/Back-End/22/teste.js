@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const arrayDeMensagem = [
   "tudo po, fiz ate esse robozin aqui pra responder o form",
   "Hoje foi MAAAAARAVILHOSO",
-  "deixar eu fazer o form assim todo dia",
+  "da CR ai mariotto https://github.com/Tiago195/Trybe-exercicios/tree/master/Exercicios/Back-End/22",
 ];
 async function sendMessage(count, page, thisBTN) {
   await page.keyboard.type(arrayDeMensagem[count]);
